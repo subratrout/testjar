@@ -1,5 +1,8 @@
 Testjar::Application.routes.draw do
 
+  resources :tests
+
+
   devise_for :users
 
   root :to => "home#index"
