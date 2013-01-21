@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Test:</b>
+  <%= @hand_back.test_id %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @hand_back.email %>
+</p>
+
+<p>
+  <b>Started at:</b>
+  <%= @hand_back.started_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_hand_back_path(@hand_back) %> |
+<%= link_to 'Back', hand_backs_path %>

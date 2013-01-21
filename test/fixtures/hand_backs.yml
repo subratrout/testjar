@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  test_id: 1
+  email: MyString
+  started_at: 2013-01-20 01:52:48
+
+two:
+  test_id: 1
+  email: MyString
+  started_at: 2013-01-20 01:52:48

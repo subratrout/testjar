@@ -1,0 +1,27 @@
+<h1>Listing hand_backs</h1>
+
+<table>
+  <tr>
+    <th>Test</th>
+    <th>Email</th>
+    <th>Started at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @hand_backs.each do |hand_back| %>
+  <tr>
+    <td><%= hand_back.test_id %></td>
+    <td><%= hand_back.email %></td>
+    <td><%= hand_back.started_at %></td>
+    <td><%= link_to 'Show', hand_back %></td>
+    <td><%= link_to 'Edit', edit_hand_back_path(hand_back) %></td>
+    <td><%= link_to 'Destroy', hand_back, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Hand back', new_hand_back_path %>

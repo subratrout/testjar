@@ -1,0 +1,29 @@
+<%= form_for(@hand_back) do |f| %>
+  <% if @hand_back.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hand_back.errors.count, "error") %> prohibited this hand_back from being saved:</h2>
+
+      <ul>
+      <% @hand_back.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :test_id %><br />
+    <%= f.number_field :test_id %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :started_at %><br />
+    <%= f.datetime_select :started_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
